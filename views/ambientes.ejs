@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/resources/css/ambiente.css">
+  <%- include('./partials/boostrap.ejs') %>
+  <title>Prestamo ambientes SENA</title>
+</head>
+
+
+
+<body>
+  <!--Contenedor de logos-->
+  <div class="container-logos">
+    <div class="user">
+      <i class="fa-solid fa-bell fa-3x"></i>
+      <i class="fa-solid fa-user-gear fa-3x"></i>
+    </div>
+  </div>
+  <!--Contenedor de la imagen-->
+  <div class="container">
+    <img src="/resources/img/logoSena.png" width="200px" class="mx-auto d-block">
+  </div>
+  <!-- contenedor del menu -->
+<!-- contenedor del menu -->
+<nav>
+  <ul>
+    <li><a href="menu-instructor">Inicio</a></li>
+    <li>
+      <a href="controlAula">Control de aulas</a>
+    </li>
+    <li>
+      <a href="#">Préstamo</a>
+      <ul class="submenu">
+        <li><a href="material">Materiales</a></li>
+<li><a href="herramientas">Herramientas</a></li>
+<li><a href="ambientes">Ambientes</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  <!-- CONTENEDOR DEL FONDO Y EL LETRERO -->
+  <div class="fondo rounded-top">
+    <div class="container-letrero rounded-top">
+      PRESTAMO
+    </div>
+    <!-- CONTENEDOR DEL FORMULARIO -->
+    <div class="formulario">
+      <form class="forma-formulario">
+        <h1 class="titulo">Prestamo de ambientes</h1>
+<!-- CONTENEDOR FORMULARIO -->
+<div class="contenedor-items-formulario">
+  <select class="items" aria-placeholder="Default select example">
+    <option value="0" hidden>-- Seleccione el ambiente --</option>
+    <option value="1">201</option>
+    <option value="2">202</option>
+    <option value="3">203</option>
+    <option value="4">204</option>
+  </select>
+</div>
+
+<div class="contenedor-items-formulario">
+  <input type="text" class="items" placeholder="a">
+  <label for="" class="label">N° de documento</label>
+</div>
+
+ 
+        <div class="contenedor-items-formulario">
+          <input type="text" class="items" placeholder="a">
+          <label for="" class="label">N° de ficha</label>
+        </div>
+
+        <div class="contenedor-items-formulario">
+          <input type="text" class="items" placeholder="a">
+          <label for="" class="label">Jornada</label>
+        </div>
+
+        <div class="contenedor-items-formulario">
+          <input type="date" class="items" placeholder="a">
+          <label for="" class="label"></label>
+        </div>
+
+        <div class="contenedor-items-formulario">
+          <input type="text" class="items" placeholder="a">
+          <label for="" class="label">Programa de formacion</label>
+        </div>
+
+        <div class="contenedor-items-formulario">
+            <input type="text" class="items-2" placeholder="a" disabled>
+            <label for="" class="label">N° de aprendices</label>
+          </div>
+  
+
+        <div class="contenedor-items-formulario">
+            <select class="items-3" aria-placeholder="Default select example">
+              <option value="0"hidden>Seleccione</option>
+              <option value="1">10/15</option>
+              <option value="2">20/25</option>
+              <option value="3">30/35</option>
+              <option value="4">40</option>
+            </select>
+          </div>
+
+        <input type="submit" id="reserva-btn" class="reserva-btn" value="RESERVAR">
+        <input type="submit" id="cancelar-btn" class="cancelar-btn" value="CANCELAR">
+      </form>
+    </div>
+  </div>
+</body>
+<script src="/resources/js/ambiente.js"></script>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de prestamo insumos ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilagv1/Proyectoprestamo.git"
+  },
+  "author": "Camila Grajales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camilagv1/Proyectoprestamo/issues"
+  },
+  "homepage": "https://github.com/camilagv1/Proyectoprestamo#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <%- include('./partials/boostrap.ejs') %>
+
+   
+    <title>registro de Administrador</title>
+</head>
+
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container border shadow p-4 mt-3">
+        <h1 class="text-center mb-4">ADMINISTRADOR</h1>
+        <form id="registro-administrador">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                    <input type="text"  class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label">Apellido <span class="text-danger">*</span></label>
+                    <input type="text"  class="form-control" id="apellido" name="apellido" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="tipo_documento" class="form-label">Tipo de documento <span class="text-danger">*</span></label>
+                    <select class="form-control" id="tipo_documento" name="tipo_documento" required>
+                        <option value="" hidden>-- Seleccione un tipo de documento --</option>
+                        <option value="cedula_ciudadania">Cedula de ciudadanía</option>
+                        <option value="cedula_extranjeria">Cedula de extranjería</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="numero_documento" class="form-label">Número de documento <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="numero_documento" name="numero_documento" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="correo_electronico" class="form-label">Correo electrónico <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="correo_electronico" name="correo_electronico" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="telefono" class="form-label">Teléfono <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="telefono" name="telefono" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="direccion" class="form-label">Dirección <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="jornada" class="form-label">Jornada <span class="text-danger">*</span></label>
+                    <select class="form-control" id="jornada" name="jornada" required>
+                        <option value="" hidden>-- Seleccione su jornada --</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="manana">Mañana</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="genero" class="form-label">Genero <span class="text-danger">*</span></label>
+                    <select class="form-control" id="genero" required>
+                        <option value="option1" hidden>-- Seleccione un genero --</option>
+                        <option value="option1">Masculino</option>
+                        <option value="option2">Femenino</option>
+                      </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="contraseña" class="form-label">Ingrese una contraseña <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control" id="contraseña" name="contraseña" required>
+                    
+                </div>
+                
+            
+            
+            </div>
+            <div class="d-flex justify-content-center">
+                <button id="btn-registro" type="submit" class="btn btn-success mr-2">Nuevo registro</button>
+                <button id="btn-regresar" class="btn btn-danger">Regresar</button>
+            </div>
+        </form>
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLabel">¡Registro exitoso!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Su registro ha sido procesado exitosamente.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+<script src="/resources/js/administrador.js"></script>
+<footer>
+    <p>DERECHOS RESERVADOS SENA</p>
+  </footer>
+</html>

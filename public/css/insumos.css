@@ -1,0 +1,26 @@
+
+  footer {
+    background-color: green;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  footer p {
+    margin: 0;
+    animation: move-text 20s infinite;
+  }
+  
+  @keyframes move-text {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgb(143, 143, 143);
+    transition: background-color 0.3s ease-in-out;
+  }

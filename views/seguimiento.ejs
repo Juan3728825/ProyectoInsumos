@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/resources/css/seguimiento.css">
+  <%- include('./partials/boostrap.ejs') %>
+    <title>Seguimiento</title>
+</head>
+
+
+
+<body>
+  <!--Contenedor de logos-->
+  <div class="container-logos">
+    <div class="user">
+      <i class="fa-solid fa-bell fa-3x"></i>
+      <i class="fa-solid fa-user-gear fa-3x"></i>
+    </div>
+  </div>
+  <!--Contenedor de la imagen-->
+  <div class="container">
+    <img src="/resources/img/logoSena.png" width="200px" class="mx-auto d-block">
+  </div>
+  <!-- contenedor del menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li>
+        <a href="aprobar">Aprobar</a>
+      </li>
+      <li>
+        <a href="seguimiento">Seguimiento</a>
+      </li>
+      <li>
+        <a href="reportes">Reportes</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+
+
+  <div class="fondo rounded-top">
+    <div class="container-letrero rounded-top">
+      <div class="titulo"> Solicitudes De Prestamos</div>
+
+      <div class="buscador">
+        <input type="text" placeholder="Buscar" required>
+        <div class="btn">
+          <i class="fas fa-search icon"></i>
+
+        </div>
+      </div>
+    </div>
+ 
+
+    <div class="info rounded-top">
+      <section class="tinfo">
+        
+        Información Del Insumo
+        <button class="btnAceptar">Aceptar</button>
+        <button class="btnRechazar">Rechazar</button>
+        <i class="fa-sharp fa-solid fa-eye"></i>
+      </section>
+    </div>
+    <hr>
+    
+
+
+
+    <div class="info rounded-top">
+      <section class="tinfo">
+        Información Del Insumo
+        <button class="btnAceptar">Aceptar</button>
+        <button class="btnRechazar">Rechazar</button>
+        <i class="fa-sharp fa-solid fa-eye"></i>
+    </section>
+    </div>
+
+
+
+
+</body>

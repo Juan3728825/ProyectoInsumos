@@ -1,0 +1,262 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* LOGOS */
+.user{
+  position: relative;
+  margin-left: 1600px;
+}
+
+.user > i{
+  margin: 20px;
+}
+
+
+/* MENU */
+
+nav {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 5%;
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-top: 20px;
+  position: relative;
+  
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+  
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #39a900;
+}
+
+/* CONTENEDORES DESPUES DE MENU*/
+
+.container{
+  margin-bottom: 40px;
+  }
+
+.fondo{
+  margin: 50px;
+  height: 900px;
+  background-color: #b8b8b8;
+}
+
+.container-letrero{
+  margin: 0px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #39a900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Solicitudes prestamos */
+.titulo{
+ 
+  height: 70px;
+  text-align: left;
+  /* arriba,derecha,abajo,izquierda */
+  padding: 5px 0 0 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+/* estilos del buscador */
+.buscador{
+
+  position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+
+/* colores del texto del buscador y del borde */
+.buscador input{
+  width: 0;
+  height: 40px;
+  padding: 0 30px;
+  font-size: 18px;
+  color: #000;
+  outline: none;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 30px;
+  transition: all 0,6s ease;
+
+
+ 
+}
+
+.btn{
+   position: absolute;
+  top: 20px;
+  right: 0;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+
+
+}
+
+.buscador:hover input{
+  width: 500px;
+} 
+
+.buscador input:focus {
+  width: 500px;
+} 
+
+
+/* Estilos para la informacion del prestamo */
+.tinfo{
+  margin-left: 50px;
+  margin-top: 178px
+  
+}
+
+.info{
+  margin: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 70px;
+  width: 600px;  
+  font-size: 40px;
+  background-color:#39A700;
+}
+
+/* estilos para los botones de aceptar y rechazar prestamo */
+
+.botones{
+ position: relative;
+ left: 1000px;
+ bottom: 55px;
+}
+
+
+.btnGenerar{
+
+color: white;
+background-color: #1BBDC8;
+ border: #1BBDC8;
+ border-radius: 2%;
+height: 56px;
+width: 180px;
+font-size: 25px;
+}
+.btnConfigurar{
+    
+    margin-left: 50px;
+  color: white;
+  background-color: #808080;
+  line-height: 55px;
+ border: #808080;
+ border-radius: 2%;
+height: 56px;
+width: 180px;
+font-size: 25px;
+
+
+
+
+}
+
+.fa-sharp{
+  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.fa-solid{
+  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 7px;
+}
+
+.fa-solid.fa-floppy-disk{
+  margin-left: 50px;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  .submenu li a {
+    padding: 5px;
+  }
+
+  li:hover .submenu {
+    display: block;
+    position: static;
+  }
+}
+

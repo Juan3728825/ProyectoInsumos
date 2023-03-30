@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* MENU */
+
+nav {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 5%;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #39a900;
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+  padding: 0px;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 5px;
+  display: block;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.submenu li a:hover {
+  background-color: #fff;
+  color: #39a900;
+}
+
+li:hover .submenu {
+  display: block;
+}
+
+/* CONTENEDORES */
+
+.fondo{
+  margin: 50px;
+  height: 1000px;
+  background-color: #a8a8a8;
+}
+
+.container{
+margin-bottom: 40px;
+}
+
+
+.container-letrero{
+  margin: 0px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #39a900;
+}
+
+.container-letrero{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* LOGOS */
+.user{
+  position: relative;
+  margin-left: 1600px;
+}
+
+.user > i{
+  margin: 20px;
+}
+
+/* contenedor del aviso */
+ .aviso{
+  margin-top: 50px;
+  margin-left: 330px;
+  margin-right: 330px;
+  height: 800px;
+  border-radius: 5px;
+  border-color:#6a6e6e;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #DADCE0;
+}
+.logood{
+    height: 125px;
+    margin-top: 30px;
+    text-align: center;
+}
+.enunciado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.texcom{
+    margin-top: 30px;
+    margin-left: 320px;
+    margin-right: 300px;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color:#6a6e6e;
+    border-style: solid;
+    height: 60px;
+    width: 400px;
+    text-align:right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.numcom{
+    border-width: 3px;
+    border-color:#1f2020;
+    border-style: solid;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto-compro{
+position: relative;
+top: 15px;
+right: 55px;
+}
+
+.btnfinalizar{
+    margin-top: 40px;
+}
+.reserva-btn {
+    position: relative;
+    padding: 15px 50px;
+    border: none;
+    left: 430px;
+    background-color: #39a900;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.locom{
+  position: relative;
+  margin-right: 320px;
+  bottom: 20px;
+
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  .submenu li a {
+    padding: 5px;
+  }
+
+  li:hover .submenu {
+    display: block;
+    position: static;
+  }
+}

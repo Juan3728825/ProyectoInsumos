@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<<<<<<< HEAD
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/resources/css/rol.css">
+  <%- include('./partials/boostrap.ejs') %>
+</head>
+
+<body>
+
+  
+
+  <nav class="navbar navbar-expand-md bg-success navbar-dark">
+    <div class="container">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/inventario">INVENTARIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOLICITUD INSUMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REPORTE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/devolucionInsumos">DEVOLUCION INSUMOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REGISTRO INVENTARIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/rol">REGISTRO USUARIO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="form-container">
+    <img src="/resources/img/logo.png" class="rounded-circle mx-auto d-block" alt="User Image">
+    <h2 class="text-center mb-4">Seleccione un rol</h2>
+    <form>
+      <div class="form-group mb-3">
+        <label for="rol">Rol:</label>
+        <select class="form-control" id="select-rol" name="rol">
+          <option hidden value="">-- Seleccione un rol --</option>
+          <option value="/registroaprendiz">Aprendiz</option>
+          <option value="/registroinstructor">Instructor</option>
+          <option value="/registrocoordinador">Coordinador</option>
+          <option value="/registroadministrador">Administrador</option>
+        </select>
+      </div>
+      <button id="btn-aceptar" type="submit" class="btn btn-success btn-block">Aceptar</button>
+    </form>
+  </div>
+
+
+
+</body>
+<script src="/resources/js/rol.js"></script>
+
+<footer>
+  <p>DERECHOS RESERVADOS SENA</p>
+</footer>
+
+</html>
+=======
+<!--prueba-->
+<head>
+    <meta charset="UTF-8">
+  <title>Rol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<%- include('./partials/boostrap.ejs') %>
+
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PRESTAMOS SENA</a>
+            <button class="navbar-toggler" type="button" data-target="#navbarCollapse"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-success"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">INVENTARIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">SOLICITUD INSUMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">REPORTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">DEVOLUCION INSUMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">REGISTRO INVENTARIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-hover-danger" href="#">REGISTRO USUARIO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="form-container">
+
+        
+        <img src="/resources/img/logo.png" class="rounded-circle mx-auto d-block" alt="User Image">
+        
+        
+        
+        <h2 class="text-center mb-4">Seleccione un rol</h2>
+        <form>
+            <div class="form-group mb-3">
+                <label for="rol">Rol:</label>
+                <select class="form-control" id="rol" name="rol">
+                    <option disabled value="">-- Seleccione un rol --</option>
+                    <option value="/registroaprendiz">Aprendiz</option>
+                    <option value="/registroinstructor">Instructor</option>
+                    <option value="/registrocoordinador">Coordinador</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Aceptar</button>
+        </form>
+    </div>
+
+    <script src="/resources/js/rol.js"></script>
+
+</body>
+<footer>
+    <p>DERECHOS RESERVADOS SENA</p>
+  </footer>
+  
+</html>
+>>>>>>> 5c7e23fc6c102b62f5fe6b5c80565db6cfeb69bb

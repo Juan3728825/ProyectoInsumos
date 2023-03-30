@@ -1,0 +1,84 @@
+/* diseño de todo el body */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #c1c4c5 !important;
+}
+/* diseño de la card */
+.user_card {
+    height: 700px;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+/* diseño del div de la imagen */
+.brand_logo_container {
+    height: 170px;
+    width: 175px;
+    border-radius: 30%;
+    text-align: center;
+}
+/* diseño del logo */
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+/* diseño del container de los datos */
+.form_container {
+    margin-bottom: 70px;
+}
+/* diseño del boton login */
+.login_btn {
+    width: 100%;
+    background: #39a900 !important;
+    color: white !important;
+}
+/* diseño del div del boton login */
+.login_container {
+    padding: 0 2rem;
+}
+/* diseño de las franjas verdes  */
+.input-group-text {
+    background: #39a900 !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+    margin-top: 35px;
+    height: 10px;
+}
+/* diseño del texto (usuario,contraseña y rol) */
+.tiusu{
+font-family: 'Overpass', sans-serif;
+font-size: 120%;
+color:#3c4245;
+margin-top: 5px;
+}
+/* diseño del titulo "inicio de sesion" */
+.title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+/* diseño del link */
+.link-password{
+    position: relative;
+    bottom: 50px;
+}
+
+/* .swa12-styled.swa12-confirm {
+background-color: green;
+} */

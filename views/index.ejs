@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/resources/css/login.css">
+ 	<!-- libreria boostrtap -->
+<%- include('./partials/boostrap.ejs') %> 
+    <title>lOGIN - prestamos SENA</title><!-- titulo de la pagina -->
+</head>
+<body>
+	<!-- container de la card -->
+		<div class="d-flex justify-content-center h-100">
+			<!-- div de la card -->
+			<div class="user_card">
+				<!-- container de la imagen -->
+				<div class="d-flex justify-content-center">
+				     <!-- div de la imagen -->
+					<div class="brand_logo_container">
+						<img src="/resources/img/logoSena.png" class="brand_logo" alt="Logo"><!-- logo del sena -->
+					</div>
+				</div>
+				<h1 class="title">Iniciar Sesión</h1><!-- titulo de inicio de sesion -->
+				<!-- container de los datos -->
+				<div class="d-flex justify-content-center form_container">
+					<form id="login-user" >
+						<!-- container de usuario -->
+						<div class="input-group mb-3">
+							<!-- div de la franja verde -->
+							<div class="input-group-append">
+								<span class="input-group-text"></span><!-- franja verde -->
+							</div>
+							<!-- titulo de usuario y caja de usuario -->
+							<label for="usuario" class="tiusu"> 
+								Usuario 
+								<input type="text" name="" class="form-control input_user" value="" placeholder="username" id="usuario"><!-- caja de usuario -->
+							</label>
+						</div>
+						<!-- container de contraseña -->
+						<div class="input-group mb-2">
+							<!-- div de la franja verde -->
+							<div class="input-group-append">	
+								<span class="input-group-text"></span><!-- franja verde -->
+							</div>
+							<!--titulo de contraseña y caja de contraseña-->
+							<label for="usuario" class="tiusu"> 
+								Contraseña
+								<input type="password" name="" class="form-control input_pass" value="" placeholder="password" id="contraseña"> <!--caja de contraseña-->
+							</label>
+						</div>
+						<!-- container de rol -->
+						<div class="input-group mb-3">
+							<!-- div de la franja verde -->
+							<div class="input-group-append">
+								<span class="input-group-text"></span><!-- franja verde -->
+							</div>
+						    <!-- titulo de rol y caja de rol -->
+							<label for="usuario" class="tiusu">
+								Rol
+								<!--caja de rol-->
+								<select class="form-select" aria-placeholder="Default select example" id="rol">
+									<option value="1">Aprendiz</option>
+									<option value="2">Instructor</option>
+									<option value="3">Administrador</option>
+									<option value="3">Coordinador</option>
+								  </select>
+							</label>
+						</div>
+						<!-- div del boton login -->
+						<div class="d-flex justify-content-center mt-3 login_container">
+				 	       <button type="submit" name="button" class="btn login_btn" id="login">Login</button> <!--boton de login-->
+							
+				        </div>
+						
+					</form>
+				</div>
+				    <!-- div del link  -->
+					<div class="link-password d-flex justify-content-center links">
+						<a id="contraseña-olvidada">Olvidaste la contraseña?</a> <!--link para recuperar contraseña-->
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+ 
+</script>
+<script src="/resources/js/login.js"></script>
+</html>

@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* CONTENEDORES */
+.container-menu{
+  background-color: rgb(230, 230, 230);
+ margin-left: 250px;
+ margin-right: 250px;
+ margin-top: 10px;
+ height: 100px;
+} 
+
+.fondo{
+  margin: 50px;
+  height: 1000px;
+  background-color: #a8a8a8;
+}
+
+.container{
+margin-bottom: 40px;
+}
+
+.container-items{
+	margin-top: 15px;
+  list-style: none;
+  margin-left: 190px;
+  font-size: 30px;
+}
+
+
+.container-letrero{
+  margin: 0px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #39a900;
+}
+
+.container-letrero{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* ITEMS DE LA BARRA */
+.inicio{
+  float:left;
+  margin-right: 100px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.control{
+  float:left;
+  margin-right: 100px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.prestamo{
+  float: left;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.inicio > li:hover{
+  background-color: #888686;
+}
+
+.control> li:hover{
+  background-color: #888686;
+}
+
+.prestamo > li:hover{
+  background-color: #888686;
+}
+
+/* LOGOS */
+.user{
+  margin-left: 1400px;
+}
+
+.user > i{
+  margin: 20px;
+}
+
+/* contenedor del aviso */
+ .aviso{
+  margin-top: 50px;
+  margin-left: 330px;
+  margin-right: 330px;
+  height: 800px;
+  border-radius: 5px;
+  border-color:#6a6e6e;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #DADCE0;
+}
+.enunciado{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 55px;
+}
+.texcom{
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color:#6a6e6e;
+    border-style: solid;
+    height: 60px;
+    text-align:right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.numcom{
+    border-width: 3px;
+    border-color:#1f2020;
+    border-style: solid;
+    height: 240px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    padding: 2em;
+    line-height:normal;
+    letter-spacing: 0.01em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btnfinalizar{
+    margin-top: 40px;
+}
+.reserva-btn {
+    position: relative;
+    padding: 15px 50px;
+    border: none;
+    left: 315px;
+    background-color: #39a900;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.contalert{
+text-align: center;
+margin-top: 20px;
+}

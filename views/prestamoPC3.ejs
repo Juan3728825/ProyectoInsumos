@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/resources/css/prestamoPC3.css">
+    <%- include('./partials/boostrap.ejs') %>
+        <title>Prestamo PC SENA</title>
+</head>
+
+
+
+<body>
+    <!--Contenedor de logos-->
+    <div class="container-logos">
+        <div class="user">
+            <i class="fa-solid fa-bell fa-3x"></i>
+            <i class="fa-solid fa-user-gear fa-3x"></i>
+        </div>
+    </div>
+    <!--Contenedor de la imagen-->
+    <div class="container">
+        <img src="/resources/img/logoSena.png" width="200px" class="mx-auto d-block">
+    </div>
+    <nav>
+        <ul>
+          <li><a href="menu-aprendiz">Inicio</a></li>
+          <li>
+            <a href="prestamoPC3">Control de PC</a>
+          </li>
+          <li>
+            <a href="prestamoPC2">Préstamo de PC</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- CONTENEDOR DEL FONDO Y EL LETRERO -->
+    <div class="fondo rounded-top">
+        <div class="container-letrero rounded-top">
+            PRESTAMO
+        </div>
+        <!-- CONTENEDOR DEL AVISO -->
+        <div class="aviso">
+            <!-- div del logo -->
+            <div class="logood">
+                <i class="fa-solid fa-circle-check fa-6x" style="color: #5baf23;"></i>
+            </div>
+            <!-- div del enunciado -->
+            <div class="enunciado">
+                <h3>LA RESERVA FUE REALIZADA CORRECTAMENTE</h3>
+                <br>
+                <h4>Recuerde devolver el computador <br>una vez vencido el tiempo de la reserva</h4>
+            </div>
+            <!-- div del boton y texto del comprobante -->
+            <div class="texco">
+                <!-- div cajon de texto -->
+                <div class="texcom">
+                    <div class="texto-compro">
+                    <h7>GENERAR COMPROBANTE</h7>
+                </div>
+                    <div class="locom">
+                        <i class="fa-solid fa-download fa-3x" style="color: #474343;"></i>
+                    </div>
+               
+                </div>
+                <!-- div comprobante
+                <div class="locom">
+                    <i class="fa-solid fa-circle-check" style="color: #5baf23;"></i>
+                </div> -->
+            </div>
+            <!-- div numero de computador -->
+            <div class="numcom">
+            <h4> <br><br>El numero de computador <br> asignado es:</h4>
+            </div>
+            <!-- div boton -->
+            <div class="btnfinalizar">
+                <input type="submit" class="reserva-btn" value="FINALIZAR">
+            </div>
+        </div>
+</body>

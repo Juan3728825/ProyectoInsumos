@@ -1,0 +1,203 @@
+<<<<<<< HEAD
+
+
+.form-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px 70px;
+  max-width: 400px;
+}
+
+.form-container h2 {
+  color: #fff;
+}
+
+.form-group label {
+  color: #fff;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.btn-block {
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  color: #0d6efd;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.btn-block:hover {
+  background-color: #0d6efd;
+  color: #fff;
+=======
+    /*prueba*/
+
+body {
+  background-image: url(/);
+}
+
+.form-container {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-weight: bold;
+}
+
+.form-container button[type="submit"] {
+  margin-top: 20px;
+}
+
+.container {
+  margin-top: 100px;
+  
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+>>>>>>> 5c7e23fc6c102b62f5fe6b5c80565db6cfeb69bb
+}
+
+
+
+.btn-success {
+  width: 100%;
+}
+
+.btn {
+  color: green;
+}
+img.rounded-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+footer p {
+  margin: 0;
+  animation: move-text 20s infinite;
+}
+
+@keyframes move-text {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+<<<<<<< HEAD
+.navbar-nav .nav-link:hover {
+  background-color: grey;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.iconos {
+  display: flex;
+  align-items: center;
+}
+
+.iconos i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.user-icon {
+  color: white;
+}
+
+.config-icon {
+  color: white;
+}
+
+
+
+body {
+  background-image: url('/resources/img/sena.jpg'); /*dirección de la imagen que se utilizará como fondo de pantalla*/
+  background-repeat: no-repeat; /*significa que la imagen no se repetirá en ningún momento.*/
+  background-position: center center; /*Se establece la posición de la imagen de fondo. Con center center se indica que la imagen se centrará tanto horizontal como verticalmente.*/
+  background-size: cover; /*Establece el tamaño de la imagen de fondo. Con cover se indica que la imagen cubra todo el espacio posible sin perder la proporción*/
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+=======
+
+
+.navbar {
+  background-color: green; /* fondo verde */
+  position: relative;
+  padding : 10px; /* padding para evitar que el fondo cubra parte del navegador */
+}
+
+.navbar-brand {
+  color: white; /* color del texto del brand */
+}
+
+.navbar-toggler {
+  border: none; /* quitar borde del botón del menú */
+}
+
+/* centrar el menú */
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+/* estilo del botón del menú */
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.btn-hover-danger:hover{
+  background-color: gray;
+}
+>>>>>>> 5c7e23fc6c102b62f5fe6b5c80565db6cfeb69bb

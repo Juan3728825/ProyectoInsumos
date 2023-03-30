@@ -1,0 +1,167 @@
+td:last-child { /*Estilo para la última columna de la tabla.*/
+    position: relative;
+  }
+  
+  td:last-child .status { /*Estilo para la clase .status dentro de la última columna de la tabla.*/
+    position: absolute; /*La posición es absoluta para que esté posicionada con respecto a su contenedor.*/
+    top: 50%; /*Se ubica en la mitad de la altura de su contenedor*/
+    right: 25px; /*Se ubica a 25px desde el borde derecho de su conetendor*/
+    transform: translateY(-50%); /*Se ajusta verticalmente*/
+  }
+  
+  
+  td:last-child i.trash-icon { /*Estilo para el icono de eliminación (i.trash-icon) dentro de la última columna de la tabla.*/
+    position: absolute; /*La posición es absoluta para que esté posicionado con respecto a su contenedor.*/
+    right: 4px; /*Se ubica a 5px desde el borde derecho de su contenedor*/
+    top: 50%; /*Se ubica en la mitad de la altura de su contenedor*/
+    transform: translateY(-50%); /*Se ajusta verticalmente*/
+  }
+
+  td:last-child i.edit-icon { /*Estilo para el icono de eliminación (i.edit-icon) dentro de la última columna de la tabla.*/
+    position: absolute; /*La posición es absoluta para que esté posicionado con respecto a su contenedor.*/
+    right: 18px; /*Se ubica a 5px desde el borde derecho de su contenedor*/
+    top: 50%; /*Se ubica en la mitad de la altura de su contenedor*/
+    transform: translateY(-50%); /*Se ajusta verticalmente*/ 
+  }
+  
+  td:hover { /*Estilo para las celdas de la tabla cuando el cursor está sobre ellas.*/
+    background-color: transparent; /*Se establece el fondo como transparente.*/
+  }
+  
+  .trash-icon:hover { /*Estilo para el icono de eliminación cuando el cursor está sobre él.*/
+    color: red; /*Se cambia el color a rojo*/
+    cursor: pointer; /*Se establece el cursor como de tipo puntero*/
+  }
+
+  .edit-icon {
+    color: #000000;
+  }
+
+  .trash-icon {
+    color: #000000;
+  }
+
+  .edit-icon:hover { /*Estilo para el icono de edición cuando el cursor está sobre él.*/
+    color: #28A745; /*Se cambia el color a verde*/
+    cursor: pointer; /*Se establece el cursor como de tipo puntero*/
+  }
+  
+  table { /*Estilo para la tabla.*/
+    border: none; /*Se elimina el borde de la tabla*/
+    border-collapse: collapse; /*Se establece el colapso de los bordes de la tabla*/
+    width: 100%; /*Se establece el ancho de la tabla como 100%*/
+  }
+  
+  th,
+  td { /*Estilo para las celdas de encabezado (th) y las celdas de datos (td) de la tabla.*/
+    border: hidden; /*Se oculta el borde de las celdas*/
+    padding: 8px; /*Se establece un relleno de 8px*/
+    text-align: left; /*Se alinea el texto a la izquierda con*/
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover { /*Estilo para las filas de la tabla cuando el cursor está sobre ellas.*/
+    background-color: #ddd; /*Se establece el fondo de la fila como #ddd.*/
+  }
+  
+  .table-wrapper { /*se utiliza para el contenedor de la tabla.*/
+    position: relative; /*establece la posición del contenedor en relación con sus elementos secundarios.*/
+    max-height: 700px; /*establece la altura máxima del contenedor.*/
+    overflow-y: auto; /*agrega una barra de desplazamiento vertical al contenedor si el contenido es demasiado grande para ajustarse dentro del área visible.*/
+    padding-bottom: 50px; /*agrega un relleno debajo de la tabla para que el espacio esté disponible para las filas que se muestran debajo de la tabla.*/
+  }
+  
+  .table-wrapper table { /*La regla se aplica a la tabla que está dentro del contenedor*/
+    width: 100%; /*establece el ancho de la tabla al 100% del ancho del contenedor.*/
+    border-collapse: collapse; /*combina los bordes de las celdas adyacentes en una sola línea para una apariencia más limpia y ordenada.*/
+  }
+  
+  .table-wrapper thead {
+    position: sticky; /*hace que el encabezado de la tabla se quede fijo en la parte superior de la pantalla cuando se desplaza.*/
+    top: 0; /*coloca el encabezado de la tabla en la parte superior de la pantalla.*/
+    background-color: #fff; /*establece el color de fondo del encabezado de la tabla en blanco.*/
+    z-index: 1; /*establece la posición z del encabezado de la tabla en 1 para asegurarse de que esté en la parte superior de otras capas.*/
+  }
+  
+  .table-wrapper th { /*Se aplica a las celdas de encabezado <th> dentro de la tabla.*/
+    font-weight: bold; /*establece el peso de fuente en negrita para el texto del encabezado de la tabla.*/
+    text-align: left; /*text-align: left alinea el texto en la celda de encabezado a la izquierda.*/
+  }
+  
+  .table-wrapper tbody tr {
+    position: relative; /*establece la posición de las filas en relación con sus elementos secundarios.*/
+  }
+  
+  .table-wrapper tbody tr:hover { /*Se aplica a las filas de la tabla cuando el cursor está sobre ellas.*/
+    background-color: #f5f5f5; /*establece el color de fondo de la fila en gris claro.*/
+  }
+  
+  .table-wrapper .delete-icon { /*Estilos para el icono de eliminación de una fila de la tabla*/
+    display: none; /*El icono de eliminación no se muestra por defecto*/
+    position: absolute; /*Posición absoluta para que se pueda posicionar en cualquier parte*/
+    top: 50%; /*Se posiciona en la mitad vertical del contenedor*/
+    right: 5px; /*Se posiciona a 5px del borde derecho del contenedor*/
+    transform: translateY(-50%); /*Se ajusta verticalmente para que quede centrado en la fila*/
+  }
+
+  .table-wrapper .edit-icon { /*Estilos para el icono de eliminación de una fila de la tabla*/
+    display: none; /*El icono de eliminación no se muestra por defecto*/
+    position: absolute; /*Posición absoluta para que se pueda posicionar en cualquier parte*/
+    top: 50%; /*Se posiciona en la mitad vertical del contenedor*/
+    right: 5px; /*Se posiciona a 5px del borde derecho del contenedor*/
+    transform: translateY(-50%); /*Se ajusta verticalmente para que quede centrado en la fila*/
+  }
+  
+  .table-wrapper tbody tr:hover .delete-icon { /*Cuando se hace hover en una fila de la tabla, se muestra el icono de eliminación*/
+    display: inline-block; /*El icono de eliminación se muestra cuando se hace hover en una fila*/
+  }
+
+  .table-wrapper tbody tr:hover .edit-icon { /*Cuando se hace hover en una fila de la tabla, se muestra el icono de eliminación*/
+    display: inline-block; /*El icono de eliminación se muestra cuando se hace hover en una fila*/
+  }
+  
+  .table-wrapper td:last-child { /*Estilos para la última celda de cada fila de la tabla*/
+    position: relative; /*Se agrega una posición relativa para poder agregar el icono de eliminación*/
+    padding-right: 40px; /*Se agrega un padding a la derecha para dejar espacio al icono de eliminación*/
+  }
+  
+  .table-wrapper tbody td { /*Estilos para todas las celdas de la tabla*/
+    vertical-align: middle; /*Se alinean verticalmente al centro todos los contenidos de las celdas*/
+  }
+  
+
+.table-wrapper tbody { /*Estilos para el cuerpo de la tabla*/
+    position: relative; /*Se agrega una posición relativa para poder ajustar la altura*/
+  height: 100%; /*Se establece una altura del 100% para que ocupe todo el espacio disponible*/
+  }
+
+  footer p {
+    margin: 0;
+    animation: move-text 20s infinite;
+  }
+  
+  @keyframes move-text {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+  }
+  
+
+
+  footer {
+    background-color: green;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  input[type="text"]:focus {
+    border-color: green;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgb(143, 143, 143);
+  transition: background-color 0.3s ease-in-out;
+}

@@ -1,0 +1,296 @@
+    /*prueba*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* MENU */
+
+nav {
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 5%;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 35px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #39a900;
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgb(230, 230, 230);
+  padding: 0px;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 5px;
+  display: block;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.submenu li a:hover {
+  background-color: #fff;
+  color: #39a900;
+}
+
+li:hover .submenu {
+  display: block;
+}
+
+/* CONTENEDORES */
+
+.fondo{
+  margin: 50px;
+  height: 850px;
+  background-color: #a8a8a8;
+}
+
+.container{
+margin-bottom: 40px;
+}
+
+.container-letrero{
+  margin: 0px;
+  height: 70px;
+  text-align: center;
+  font-size: 40px;
+  background-color: #39a900;
+}
+
+.container-letrero{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* LOGOS */
+.user{
+  position: relative;
+  margin-left: 1600px;
+  cursor: pointer;
+}
+
+.user > i{
+  margin: 20px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+  height: 100vh;
+}
+
+.forma-formulario {
+  position: relative;
+  background-color: white;
+  width: 400px;
+  padding: 20px 40px;
+  left: 50px;
+  bottom: 70px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+}
+
+.titulo{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contenedor-items-formulario{
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+  
+}
+
+.items{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* TEXTO MARCADOR */
+::placeholder {
+  color: transparent;
+}
+
+/* HACE QUE EL TEXTO SE VEA DENTRO DEL DIV */
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+/* BOTONES */ 
+
+.reserva-btn {
+  position: relative;
+  padding: 15px 30px;
+  border: none;
+  background-color: #39a900;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.cancelar-btn {
+  position: relative;
+  margin-top: 50px;
+  left: 50px;
+  padding: 15px 30px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+/* EFECTO DENTRO DEL TEXTO */
+.items:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #39a900;
+}
+
+.items:focus {
+  border: 2px solid #39a900;
+}
+
+/* CARRUSEL */
+
+#carouselExampleIndicators{
+  bottom: 110px;
+  position:relative;
+  left: 250px;
+  width: 700px;
+  background-color: #39a900;
+  border-radius: 10px;
+}
+
+.carousel-item{
+  text-align: center;
+}
+
+.fondo-img{
+  margin: 70px;
+}
+
+.boton-devolucion{
+  margin-top: 400px;
+  width: 100px;
+  position: absolute;
+  right: 40%;
+  
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  .submenu li a {
+    padding: 5px;
+  }
+
+  li:hover .submenu {
+    display: block;
+    position: static;
+  }
+}

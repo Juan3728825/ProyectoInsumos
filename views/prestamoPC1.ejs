@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/resources/css/prestamoPC1.css">
+    <%- include('./partials/boostrap.ejs') %>
+        <title>Prestamo PC SENA</title>
+</head>
+
+
+
+<body>
+    <!--Contenedor de logos-->
+    <div class="container-logos">
+        <div class="user">
+            <i class="fa-solid fa-bell fa-3x"></i>
+            <i class="fa-solid fa-user-gear fa-3x"></i>
+        </div>
+    </div>
+    <!--Contenedor de la imagen-->
+    <div class="container">
+        <img src="/resources/img/logoSena.png" width="200px" class="mx-auto d-block">
+    </div>
+    <!-- contenedor del menu -->
+    <div class="container-menu">
+        <nav class="navbar navbar-expand mt-8 text-aling-center">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- contenedor de los elementos del menu  -->
+                <div class="container-items">
+                    <div class="inicio">
+                        <li class="nav-init active">
+                            <a class="nav-link text-dark" href="/menu">INICIO<span class="sr-only">(current)</span></a>
+                        </li>
+                    </div>
+                    <div class="control">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">CONTROL DE PC</a>
+                        </li>
+                    </div>
+                    <div class="prestamo">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  text-dark" href="#" role="button" data-toggle="" aria-expanded="false">
+                                PRESTAMO PC
+                            </a>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- CONTENEDOR DEL FONDO Y EL LETRERO -->
+    <div class="fondo rounded-top">
+        <div class="container-letrero rounded-top">
+            PRESTAMO
+        </div>
+        <!-- CONTENEDOR DEL AVISO -->
+        <div class="aviso">
+            <!-- div del enunciado -->
+            <div class="enunciado">
+                <h3>Aqui podras reservar un equipo y <br> reclamarlo posteriormente en el almacen</h3>
+                <br>
+            </div>
+            <!-- contenedor logo alet -->
+        <div class="contalert">
+          <i class="fa-solid fa-triangle-exclamation fa-8x"></i>
+        </div>
+            <!-- div texto -->
+            <div class="numcom">
+            <h4> Recuerde que tiene plazo para reclamar su equipo en el lapso
+            de una hora, una vez agotado el tiempo, se cancelara la reserva</h4>
+            </div>
+            <!-- div boton -->
+            <div class="btnfinalizar">
+                <input type="submit" class="reserva-btn" value="REALIZAR RESERVA">
+            </div>
+        </div>
+</body>

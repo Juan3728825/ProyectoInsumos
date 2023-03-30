@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--prueba-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/css/menu-instructor.css">
+    <%- include('./partials/boostrap.ejs') %>
+    <title>Menu Prestamos SENA</title>
+</head>
+
+<body>
+    <!--Contenedor de iconos-->
+    <div class="container-iconos">
+        <div class="user">
+            <i class="fa-solid fa-bell fa-3x"></i>
+            <i class="fa-solid fa-user-gear fa-3x"></i>
+        </div>
+        <!--Contenedor de la imagen-->
+        <div class="container">
+            <img src="/resources/img/logoSena.png" width="200px" class="mx-auto d-block">
+        </div>
+
+        <!-- contenedor del menu -->
+        <nav>
+            <ul>
+              <li><a href="menu-instructor">Inicio</a></li>
+              <li>
+                <a href="controlAula">Control de aulas</a>
+              </li>
+              <li>
+                <a href="#">Préstamo</a>
+                <ul class="submenu">
+                  <li><a href="material">Materiales</a></li>
+        <li><a href="herramientas">Herramientas</a></li>
+        <li><a href="ambientes">Ambientes</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+            <!-- CONTENEDOR DE EL MENSAJE -->
+            <div class="bienvenido text-light rounded-top">
+                <div class="texto">¡Bienvenido!</div>
+                <div class="parrafo rounded-bottom">
+                    <div class="enunciado">
+                        <p>Este recurso le permitirá acceder a los diferentes prestamos
+                            que se pueden realizar en el centro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
